@@ -1,0 +1,100 @@
+/*
+
+Theme Name: redlab
+
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    height: 80px;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    height: 80px;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__text {
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.footer__text {
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.news-items-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.news-item {
+    flex-basis: 32%;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 40px;
+}
+
+.news-item__cover-bg {
+    max-width: 100%;
+}
+
+a.news-item__link {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+section.news-wrapper {
+    padding: 80px 0;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.pagination {
+    margin: 40px 0 0;
+    text-align: center;
+}
+
+.page-numbers.current {
+    background-color: #ccc;
+}
+
+.page-numbers {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: .5s;
+}
+
+.page-numbers:hover {
+    background-color: #ccc;
+
+}
+
+@media(max-width: 767px) {
+    .news-item {
+        flex-basis: 48%;
+    }
+}
